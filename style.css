@@ -46,7 +46,7 @@ div.botoes button {
 }
 
 div.box-container {
-    padding: 35px 20px;
+    padding-bottom: 65px;
     margin: 12px 21px;
     height: 150px;
     background-color: #fff;
@@ -54,6 +54,10 @@ div.box-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.box-container .content {
+    padding: 35px 20px;
 }
 
 .title {
@@ -81,10 +85,15 @@ div.box-container .content button {
 }
 
 .sorvetinho {
+    margin: 20px;
+    padding: 30px;
+    width: 180px;
+    border-radius: 10px;
+    display: flex;
     flex-wrap: wrap;
     background: radial-gradient(circle at 20% 20%, #ffffff, #c4f3e6 40%, #9be7ff 75%);
     justify-content: center;
-    align-content: center;
+    align-items: center;
     font-size: 50px;
 }
 
@@ -103,6 +112,7 @@ div.box-container .content button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 
 .bloco-sabor {
@@ -110,19 +120,21 @@ div.box-container .content button {
     margin: 5px;
     border-radius: 10px;
     background-color: #fff;
-    width: 120px;
-    height: 130px;
+    width: 150px;
     display: flex;
     font-size: small;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 5px 0px rgba(212, 212, 212, 0.863);
+    gap: 5px;
 }
 
 .bloco-sabor p {
-    font-weight: bold;
     line-height: 35px;
+    font-size: large;
+    font-weight: bold;
 }
 
 .bloco-sabor span {
@@ -133,8 +145,45 @@ div.box-container .content button {
     color: var(--descricao-color);
 }
 
+.bloco-sabor .price {
+    opacity: 75%;
+}
+
 .bloco-sabor .emoji {
     font-size: xx-large;
+}
+
+.combos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0px;
+    margin: 0px 30px;
+}
+
+.bloco-combo {
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 15px;
+    width: 570px;
+    border-left: 5px solid var(--btn-bkgcolor)
+}
+
+.bloco-combo h3 {
+    font-size: 17px;
+    color: var(--titulos-cor);
+}
+
+.bloco-combo p {
+    font-size: small;
+    opacity: 60%;
+    font-weight: bold;
+}
+
+.bloco-combo .price {
+    opacity: 100%;
+    font-size: medium;
+    margin-top: 12px;
 }
 
 .rodape {
@@ -142,8 +191,38 @@ div.box-container .content button {
     background-color: var(--bkgcolor-menores);
     color: #fff;
     border-radius: 10px;
-    margin: 23px;
+    margin: 23px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+}
+
+.rodape .info {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.rodape .contacts {
+    display: flex;
+}
+
+.rodape .tel {
+    background-color: var(--btn-bkgcolor);
+    border: none;
+    padding: 5px 8px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.rodape .insta {
+    background-color: var(--btn-bkgcolor);
+    border: none;
+    padding: 5px 8px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 10px;
 }
